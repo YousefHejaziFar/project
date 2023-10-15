@@ -1,0 +1,759 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: myfirstfont;
+  src: url(./font/LYjNdG7kmE0gfaN9pQ.woff2);
+}
+@font-face {
+  font-family: mysecondfont;
+  src: url(./font/7cHpv4kjgoGqM7E_DMs5.woff2);
+}
+@font-face {
+  font-family: mythirdfont;
+  src: url(./font/7cHqv4kjgoGqM7E3t-4s51os.woff2);
+}
+/*
+                                  nav-bar
+*/
+nav {
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: 0%;
+}
+nav img {
+  float: left;
+  padding: 25px 5px 20px 35px;
+}
+nav a {
+  color: white;
+  padding: 20px 5px;
+  display: inline-block;
+  font-size: 45px;
+  font-family: myfirstfont;
+}
+.nav-bar {
+  float: right;
+  padding: 30px 0px;
+}
+.nav-bar li {
+  display: inline-block;
+  color: white;
+  margin-right: 50px;
+  font-size: 20px;
+  font-family: myfirstfont;
+  transition: 0.3s;
+}
+/*
+                            dropdown
+*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 16px;
+  font-family: myfirstfont;
+}
+.dropdown-content {
+  position: absolute;
+  display: none;
+  max-width: 200px;
+  background-color: #00000088;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  width: 180px;
+}
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  padding: 12px 0px 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: myfirstfont;
+  transition: 0.4s;
+}
+.dropdown-content a:hover {
+  color: rgb(255, 21, 0);
+  padding-left: 20px;
+}
+.dropbtn:hover {
+  color: rgb(255, 68, 0);
+}
+.li-dropdown:hover .dropdown-content {
+  display: block;
+}
+.nav-bar .title {
+  margin-right: 350px;
+  padding-bottom: 30px;
+}
+.nav-bar li img {
+  width: 50px;
+  height: 50px;
+}
+.nav-bar li h1 {
+  display: inline-block;
+}
+.nav-bar i {
+  font-size: 20px;
+  color: rgb(201, 0, 0);
+  margin-right: 200px;
+}
+.navbar-btn {
+  background-color: red;
+  font-family: mysecondfont;
+  color: white;
+  padding: 20px 25px;
+  font-size: 14px;
+  border: 0px;
+  transition: 0.3s;
+}
+li:hover {
+  color: rgb(255, 68, 0);
+}
+/*
+                    header
+*/
+header {
+  background-image: url(./images/h1_hero.png.webp);
+  background-position: center;
+  background-size: cover;
+  height: 130vh;
+  background-attachment: fixed;
+  position: relative;
+}
+header hr {
+  display: inline-block;
+  width: 10%;
+  border-color: rgb(184, 49, 0);
+  margin-right: 30px;
+  padding-bottom: 3px;
+  background-color: orangered;
+}
+header h3 {
+  font-family: myfirstfont;
+  color: orangered;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 70%;
+}
+header h1 {
+  font-family: mythirdfont;
+  color: white;
+  position: absolute;
+  top: 37%;
+  left: 10%;
+  width: 40%;
+  line-height: 85px;
+  text-align: justify;
+  font-size: 60px;
+}
+.play-btn {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  color: white;
+  background-color: red;
+  border: 3px solid red;
+  right: 10%;
+  top: 60%;
+  transition: 0.5s;
+}
+.play-btn i {
+  transform: translate(33px, 28px);
+  font-size: 12px;
+}
+.header-btn {
+  font-family: mysecondfont;
+  position: absolute;
+  top: 68%;
+  left: 10%;
+  background-color: red;
+  color: white;
+  padding: 25px 25px;
+  font-size: 16px;
+  border: red;
+  transition: 0.3s;
+}
+.header-btn:hover,
+.navbar-btn:hover {
+  background-color: rgb(102, 0, 0);
+}
+.play-btn:hover {
+  color: red;
+  background-color: white;
+}
+/*
+                            section-1
+*/
+.abut-our-gym {
+  width: 100%;
+  height: 130vh;
+  padding: 150px;
+}
+.abut-our-gym .img {
+  float: left;
+  width: 600px;
+  height: 800px;
+}
+.abut-our-gym .img img {
+  width: 90%;
+  height: 90%;
+}
+.abut-our-gym .text {
+  padding: 100px 0px 0px 650px;
+}
+.text hr {
+  display: inline-block;
+  width: 10%;
+  border-color: rgb(184, 49, 0);
+  margin-right: 10px;
+  padding-bottom: 3px;
+  background-color: orangered;
+  border: orangered;
+}
+.text h4 {
+  color: orangered;
+  font-family: mysecondfont;
+}
+.text h1 {
+  color: rgb(0, 0, 81);
+  margin: 30px 0px;
+  font-size: 40px;
+  line-height: 50px;
+  font-family: mythirdfont;
+}
+.text p {
+  line-height: 30px;
+  margin: 30px 0px;
+}
+.text .about-our-gym-btn {
+  font-family: mysecondfont;
+  padding: 20px 40px;
+  background-color: red;
+  color: white;
+  border: none;
+  margin-top: 60px;
+  transition: 0.3s;
+}
+.about-our-gym-btn:hover {
+  background-color: rgb(102, 0, 0);
+}
+/*
+                              section-2 
+*/
+.OUR-SERVICES {
+  height: 130vh;
+  background-image: url(./images/section_bg01.png.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 180px;
+}
+.OUR-SERVICES h3 {
+  color: orangered;
+  font-family: mysecondfont;
+}
+.OUR-SERVICES hr {
+  display: inline-block;
+  width: 5%;
+  border-color: rgb(184, 49, 0);
+  margin-right: 20px;
+  padding: 0.5px;
+  background-color: orangered;
+}
+.OUR-SERVICES h1 {
+  color: white;
+  width: 55%;
+  font-size: 50px;
+  text-align: justify;
+  margin: 50px 0px;
+  line-height: 60px;
+  display: inline-block;
+  font-family: myfirstfont;
+}
+.OUR-SERVICES .OUR-SERVICES-btn {
+  font-family: mysecondfont;
+  float: right;
+  padding: 20px 30px;
+  background-color: red;
+  color: white;
+  border-color: red;
+  margin-top: 140px;
+  border: 0px;
+  transition: 0.3s;
+}
+.OUR-SERVICES-btn:hover {
+  background-color: rgb(102, 0, 0);
+}
+
+.boxes {
+  margin-top: 50px;
+  width: 100%;
+  height: 65%;
+}
+.boxes div {
+  width: 32%;
+  height: 100%;
+  background-color: white;
+  float: left;
+  position: relative;
+}
+.boxes h1 {
+  color: black;
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  font-family: mysecondfont;
+  margin: 80px 0px 10px 0px;
+}
+.boxes p {
+  color: rgba(0, 0, 0, 0.723);
+  text-align: center;
+  margin: 0px 40px;
+  line-height: 2;
+}
+.boxes span {
+  font-size: 60px;
+  transform: translate(250%, 100%);
+  text-align: center;
+}
+.boxes button {
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
+  padding: 0px 0px;
+  background-color: red;
+  color: white;
+  border-color: red;
+  border: 0px;
+  height: 0px;
+  transition: 0.3s;
+}
+.boxes a {
+  font-family: myfirstfont;
+  font-size: 0px;
+}
+.boxes a i {
+  margin-left: 20px;
+}
+.box-2 {
+  margin: 0px 22px;
+}
+.boxes div:hover span {
+  color: rgb(255, 17, 0);
+}
+.boxes h1:hover {
+  color: rgb(255, 30, 0);
+}
+.boxes div:hover button {
+  padding: 20px 0px;
+  height: 65px;
+}
+.boxes div:hover a {
+  font-size: 17px;
+}
+
+/*
+                                section-3
+*/
+.fitness-gallery {
+  height: 130vh;
+  padding: 80px 0px;
+}
+.fitness-gallery .content {
+  height: 110vh;
+  position: relative;
+}
+.fitness-gallery .content .box-1 {
+  height: 100%;
+  width: 50%;
+  background-image: url(./images/gallery1.png.webp);
+  position: absolute;
+}
+.fitness-gallery .content .box-2 {
+  width: 23%;
+  height: 48%;
+  background-image: url(./images/gallery2.png.webp);
+  position: absolute;
+  top: 0%;
+  left: 50.5%;
+}
+.fitness-gallery .content .box-3 {
+  width: 23%;
+  height: 48%;
+  background-image: url(./images/gallery3.png.webp);
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+.fitness-gallery .content .box-4 {
+  width: 23%;
+  height: 48%;
+  background-image: url(./images/gallery4.png.webp);
+  position: absolute;
+  bottom: 0%;
+  left: 52%;
+}
+.fitness-gallery .content .box-5 {
+  width: 23%;
+  height: 48%;
+  background-image: url(./images/gallery5.png.webp);
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+}
+.fitness-gallery .content .shadow {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.247),
+    rgb(0, 0, 0)
+  );
+  padding-top: 40%;
+  display: none;
+}
+.content .shadow .right-buttom {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: white;
+  background-color: red;
+  transition: 0.2s;
+  margin: auto;
+}
+.shadow .right-buttom i {
+  transform: translate(22px, 20px);
+  font-size: 20px;
+}
+.shadow .right-buttom:hover {
+  color: red;
+  background-color: white;
+}
+.shadow h1 {
+  color: white;
+  text-align: center;
+  margin: 20px 0px 5px 0px;
+  font-family: myfirstfont;
+  font-size: 28px;
+}
+.shadow p {
+  color: white;
+  text-align: center;
+  font-family: mythirdfont;
+}
+.content :hover .shadow {
+  display: block;
+}
+/*
+                          section-4
+*/
+.TIME-SCHEDULE {
+  height: 170vh;
+}
+.TIME-SCHEDULE .membership-offer {
+  width: 100%;
+  height: 45vh;
+  padding: 100px 200px;
+  background-color: rgb(0, 36, 75);
+}
+.membership-offer h1 {
+  color: white;
+  font-size: 60px;
+  width: 50%;
+  line-height: 1.5;
+  font-family: myfirstfont;
+  display: inline-block;
+}
+.membership-offer button {
+  font-family: mysecondfont;
+  float: right;
+  padding: 20px 30px;
+  background-color: red;
+  color: white;
+  margin-top: 50px;
+  border-color: red;
+  border: 0px;
+  transition: 0.3s;
+}
+.membership-offer button:hover {
+  background-color: rgb(102, 0, 0);
+}
+.TIME-SCHEDULE .timetable {
+  padding: 200px 50px 120px 50px;
+}
+.timetable hr {
+  display: inline-block;
+  width: 4%;
+  margin-right: 8px;
+  background-color: rgb(255, 34, 0);
+  height: 4px;
+}
+.timetable h4 {
+  color: rgb(252, 17, 0);
+  font-family: mysecondfont;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.timetable h1 {
+  text-align: center;
+  color: rgb(0, 19, 96);
+  font-family: myfirstfont;
+  font-size: 50px;
+  width: 40%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+.week {
+  width: 75%;
+  margin: auto;
+}
+.week p {
+  float: left;
+  margin: 5px;
+  font-family: myfirstfont;
+  font-size: 30px;
+  color: rgb(0, 10, 50);
+  padding: 10px 30px;
+}
+.week .monday {
+  background-color: rgb(255, 17, 0);
+  color: white;
+}
+.kick-boxing {
+  width: 73%;
+  margin: auto;
+}
+.kick-boxing div {
+  float: left;
+  padding: 30px 40px;
+  height: 200px;
+  margin: 5px;
+  transition: 0.3s;
+}
+.kick-boxing .time {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  font-family: myfirstfont;
+  text-align: center;
+  padding: 5px;
+  width: 70%;
+  margin: 10px auto;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.kick-boxing h2 {
+  color: rgb(0, 0, 0);
+  font-family: myfirstfont;
+  font-size: 26px;
+  margin: 10px 0px 15px 0px;
+  transition: 0.3s;
+}
+.kick-boxing p {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.679);
+  font-size: 14px;
+  transition: 0.3s;
+}
+.kick-boxing .box-2 {
+  background-color: rgb(255, 17, 0);
+}
+.kick-boxing .box-2 .time {
+  background-color: white;
+  color: black;
+}
+.kick-boxing .box-2 h2 {
+  color: white;
+}
+.kick-boxing .box-2 p {
+  color: white;
+}
+.kick-boxing div:hover {
+  background-color: rgb(255, 17, 0);
+}
+.kick-boxing div:hover .time {
+  background-color: white;
+  color: black;
+}
+.kick-boxing div:hover h2 {
+  color: white;
+}
+.kick-boxing div:hover p {
+  color: white;
+}
+/*
+                          section-5
+*/
+.CONTACT-FORM {
+  height: 130vh;
+}
+.CONTACT-FORM .img {
+  width: 45%;
+  margin-right: 50px;
+  height: 120vh;
+  background-image: url(./images/contact_form.png.webp);
+  background-size: cover;
+  float: left;
+}
+.CONTACT-FORM .text {
+  padding-top: 100px;
+}
+.CONTACT-FORM .text hr {
+  display: inline-block;
+  width: 4%;
+  margin-right: 8px;
+  background-color: rgb(255, 67, 39);
+}
+.CONTACT-FORM .text h3 {
+  color: rgb(252, 17, 0);
+  font-family: mysecondfont;
+  margin-bottom: 50px;
+}
+.CONTACT-FORM .text h1 {
+  color: rgb(0, 14, 70);
+  font-family: myfirstfont;
+  font-size: 50px;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 120px;
+}
+.CONTACT-FORM .text input {
+  border-color: rgba(255, 255, 255, 0);
+  outline: none;
+  color: rgba(0, 0, 0, 0.811);
+  font-size: 15px;
+  margin: 0px 50px 15px 20px;
+}
+.CONTACT-FORM .text .bottom-line-input {
+  display: block;
+  height: 0.1px;
+  background-color: rgba(0, 0, 0, 0.163);
+  padding: 0px;
+  width: 100%;
+}
+.text select {
+  border: 0px;
+  color: rgba(0, 0, 0, 0.447);
+  width: 80%;
+  outline: none;
+  font-size: 15px;
+  margin: 50px 0px 10px 20px;
+}
+.text textarea {
+  width: 100%;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  outline: none;
+  height: 100px;
+  font-size: 18px;
+  border-color: rgba(0, 0, 0, 0.315);
+  padding-left: 20px;
+}
+.input-1 {
+  display: inline-block;
+  margin-right: 20px;
+}
+.input-2 {
+  display: inline-block;
+}
+.input-3 {
+  display: inline-block;
+  width: 17%;
+  margin-right: 20px;
+}
+.input-4 {
+  display: inline-block;
+}
+.input-5 {
+  display: block;
+  width: 35%;
+  float: right;
+  margin-right: 250px;
+  margin-top: 60px;
+}
+.form-btn button {
+  font-family: mysecondfont;
+  padding: 20px 40px;
+  background-color: red;
+  color: white;
+  margin-top: 50px;
+  border: 0px;
+  transition: 0.3s;
+}
+.form-btn button:hover {
+  background-color: rgb(102, 0, 0);
+}
+/*
+                          footer
+*/
+footer {
+  height: 83vh;
+  background-image: url(./images/section_bg03.png.webp);
+  background-size: cover;
+  background-position: center;
+  padding: 150px 150px 0px 180px;
+}
+footer table {
+  width: 100%;
+  color: white;
+  border-bottom: 1px;
+  border-color: white;
+  padding-bottom: 70px;
+}
+footer table th {
+  text-align: left;
+  padding: 0px 50px 40px 0px;
+  font-family: myfirstfont;
+  font-size: 20px;
+  width: 24.5%;
+}
+footer table td a {
+  color: white;
+  font-size: 60px;
+  font-family: myfirstfont;
+}
+footer table td {
+  color: rgba(255, 255, 255, 0.507);
+  padding-bottom: 20px;
+  transition: 0.5s;
+  font-family: mysecondfont;
+}
+footer table td i {
+  margin-right: 20px;
+  color: rgba(255, 255, 255, 0.67);
+  font-size: 20px;
+  transition: 0.5s;
+}
+td:hover {
+  padding-left: 5px;
+  color: rgba(255, 255, 255, 0.886);
+}
+td i:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+footer hr {
+  border-color: rgba(0, 0, 0, 0.495);
+}
+footer p {
+  color: rgba(255, 255, 255, 0.468);
+  text-align: center;
+  padding-top: 50px;
+}
+footer p a {
+  color: red;
+}
+footer p i {
+  color: red;
+}
