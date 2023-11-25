@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*
+                                  nav-bar
+*/
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: 0%;
+  padding: 20px 0px;
+}
+nav div {
+  display: inline-block;
+}
+nav .nav-item-1 {
+  width: 3%;
+  text-align: center;
+  font-size: 25px;
+}
+nav .nav-item-2 {
+  width: 20%;
+}
+.nav-item-3 ul li {
+  display: inline-block;
+  font-size: 20px;
+  margin-right: 25px;
+}
+.nav-item-3 li i {
+  padding: 5px;
+  font-size: 15px;
+}
+.nav.item-3-item-1 {
+}
+.nav.item-3-item-2 {
+}
+.nav.item-3-item-3 {
+}
+.nav.item-3-item-4 {
+}
+.nav.item-3-item-5 {
+}
