@@ -120,11 +120,12 @@ nav .nav-item-2 {
 */
 .left-hidden-box {
   height: 100vh;
-  width: 30%;
+  width: 25%;
   background-color: rgb(255, 255, 255);
   position: absolute;
   left: 0;
   top: 0;
+  padding: 0px 40px 30px 40px;
 }
 .left-hidden-box .content {
   height: 100%;
@@ -133,49 +134,114 @@ nav .nav-item-2 {
 .left-hidden-box .grid-container {
   display: grid;
   height: 100%;
+  gap: 20px;
 }
-.grid-container div {
-  display: grid;
+.grid-container svg {
+  transition: 0.5s;
 }
 .left-hidden-box .grid-container .grid-item-1 {
+  color: rgba(0, 0, 0, 0.359);
+  display: grid;
+  grid-column: 1;
+  grid-row: 1;
+  align-items: end;
+  font-size: 20px;
+}
+.left-hidden-box .grid-container .grid-item-2 {
+  display: grid;
+  grid-column: 2;
+  grid-row: 1;
+  align-items: end;
+  justify-content: end;
+  font-size: 20px;
+}
+.left-hidden-box .grid-container .grid-item-3 {
   background-image: url(./image/ea-play-16x9.png.adapt.crop1x1.767w.png);
   background-size: cover;
   grid-column: 1 / span 2;
-  grid-row: 1;
+  grid-row: 2 / span 2;
+  display: grid;
 }
-.left-hidden-box .grid-container .grid-item-2 {
+.grid-item-3 svg {
+  width: 80px;
+  height: 80px;
+}
+.left-hidden-box .grid-container .grid-item-4 {
   background-image: url(./image/eas-fifa22-gen5-ue-keyart-horz-f23logo.jpg.adapt.crop1x1.767w.jpg);
   background-size: cover;
   grid-column: 1;
-  grid-row: 2;
+  grid-row: 4;
+  display: grid;
 }
-.left-hidden-box .grid-container .grid-item-3 {
+.grid-item-4 svg {
+  width: 60px;
+  height: 60px;
+}
+.left-hidden-box .grid-container .grid-item-5 {
   background-image: url(./image/1-1-gamebox-f122-keyart-1.png.adapt.crop1x1.767w.png);
   background-size: cover;
   grid-column: 2;
-  grid-row: 2;
+  grid-row: 4;
+  display: grid;
 }
-.left-hidden-box .grid-container .grid-item-4 {
+.left-hidden-box .grid-container .grid-item-6 {
   background-image: url(./image/madden-23-keyart.jpg.adapt.crop1x1.767w.jpg);
   background-size: cover;
   grid-column: 1;
-  grid-row: 3;
+  grid-row: 5;
+  display: grid;
 }
-.left-hidden-box .grid-container .grid-item-5 {
+.grid-item-6 svg {
+  width: 70px;
+  height: 70px;
+}
+.left-hidden-box .grid-container .grid-item-7 {
   background-image: url(./image/apex-legends-keyart.jpg.adapt.crop1x1.767w.jpg);
   background-size: cover;
   grid-column: 2;
-  grid-row: 3;
+  grid-row: 5;
+  display: grid;
 }
-.left-hidden-box .grid-container .grid-item-6 {
+.grid-item-7 svg {
+  width: 50px;
+  height: 50px;
+}
+.left-hidden-box .grid-container .grid-item-8 {
   background-image: url(./image/battlefield-2042-key-art.jpg.adapt.crop1x1.767w.jpg);
   background-size: cover;
   grid-column: 1;
-  grid-row: 4;
+  grid-row: 6;
+  display: grid;
 }
-.left-hidden-box .grid-container .grid-item-7 {
+.grid-item-8 svg {
+  width: 80px;
+  height: 80px;
+}
+.left-hidden-box .grid-container .grid-item-9 {
   background-image: url(./image/the-sims-4-keyart.jpg.adapt.crop1x1.767w.jpg);
   background-size: cover;
   grid-column: 2;
-  grid-row: 4;
+  grid-row: 6;
+  display: grid;
+}
+.grid-container .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container img {
+  width: 80px;
+  height: 30px;
+}
+.grid-item-1 p:hover,
+.grid-item-2 i:hover {
+  color: rgb(255, 68, 0);
+}
+.grid-item-3 svg:hover {
+  width: 100px;
+  height: 100px;
+}
+.grid-item-4 img:hover {
+  width: 100px;
+  height: 100px;
 }
