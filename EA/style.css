@@ -33,6 +33,10 @@ nav .nav-item-1 {
   color: rgb(255, 68, 0);
   font-size: 30px;
 }
+.nav-item-1 i:checked .left-hidden-box {
+  width: 27%;
+  padding: 0px 40px 30px 40px;
+}
 nav .nav-item-2 {
   width: 15%;
 }
@@ -120,15 +124,19 @@ nav .nav-item-2 {
 */
 .left-hidden-box {
   height: 100vh;
-  width: 25%;
+  width: 0%;
   background-color: rgb(255, 255, 255);
   position: absolute;
   left: 0;
   top: 0;
-  padding: 0px 40px 30px 40px;
+  overflow-y: scroll;
+  z-index: 3;
+}
+.left-hidden-box::-webkit-scrollbar {
+  display: none;
 }
 .left-hidden-box .content {
-  height: 100%;
+  height: 130vh;
   width: 100%;
 }
 .left-hidden-box .grid-container {
@@ -137,111 +145,155 @@ nav .nav-item-2 {
   gap: 20px;
 }
 .grid-container svg {
-  transition: 0.5s;
+  position: absolute;
 }
 .left-hidden-box .grid-container .grid-item-1 {
   color: rgba(0, 0, 0, 0.359);
   display: grid;
   grid-column: 1;
   grid-row: 1;
-  align-items: end;
+  align-items: center;
   font-size: 20px;
 }
 .left-hidden-box .grid-container .grid-item-2 {
   display: grid;
   grid-column: 2;
   grid-row: 1;
-  align-items: end;
+  align-items: center;
   justify-content: end;
   font-size: 20px;
-}
-.left-hidden-box .grid-container .grid-item-3 {
-  background-image: url(./image/ea-play-16x9.png.adapt.crop1x1.767w.png);
-  background-size: cover;
-  grid-column: 1 / span 2;
-  grid-row: 2 / span 2;
-  display: grid;
-}
-.grid-item-3 svg {
-  width: 80px;
-  height: 80px;
-}
-.left-hidden-box .grid-container .grid-item-4 {
-  background-image: url(./image/eas-fifa22-gen5-ue-keyart-horz-f23logo.jpg.adapt.crop1x1.767w.jpg);
-  background-size: cover;
-  grid-column: 1;
-  grid-row: 4;
-  display: grid;
-}
-.grid-item-4 svg {
-  width: 60px;
-  height: 60px;
-}
-.left-hidden-box .grid-container .grid-item-5 {
-  background-image: url(./image/1-1-gamebox-f122-keyart-1.png.adapt.crop1x1.767w.png);
-  background-size: cover;
-  grid-column: 2;
-  grid-row: 4;
-  display: grid;
-}
-.left-hidden-box .grid-container .grid-item-6 {
-  background-image: url(./image/madden-23-keyart.jpg.adapt.crop1x1.767w.jpg);
-  background-size: cover;
-  grid-column: 1;
-  grid-row: 5;
-  display: grid;
-}
-.grid-item-6 svg {
-  width: 70px;
-  height: 70px;
-}
-.left-hidden-box .grid-container .grid-item-7 {
-  background-image: url(./image/apex-legends-keyart.jpg.adapt.crop1x1.767w.jpg);
-  background-size: cover;
-  grid-column: 2;
-  grid-row: 5;
-  display: grid;
-}
-.grid-item-7 svg {
-  width: 50px;
-  height: 50px;
-}
-.left-hidden-box .grid-container .grid-item-8 {
-  background-image: url(./image/battlefield-2042-key-art.jpg.adapt.crop1x1.767w.jpg);
-  background-size: cover;
-  grid-column: 1;
-  grid-row: 6;
-  display: grid;
-}
-.grid-item-8 svg {
-  width: 80px;
-  height: 80px;
-}
-.left-hidden-box .grid-container .grid-item-9 {
-  background-image: url(./image/the-sims-4-keyart.jpg.adapt.crop1x1.767w.jpg);
-  background-size: cover;
-  grid-column: 2;
-  grid-row: 6;
-  display: grid;
-}
-.grid-container .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container img {
-  width: 80px;
-  height: 30px;
 }
 .grid-item-1 p:hover,
 .grid-item-2 i:hover {
   color: rgb(255, 68, 0);
 }
-.grid-item-3 svg:hover {
-  width: 100px;
-  height: 100px;
+.left-hidden-box .grid-container .grid-item-3 {
+  background-image: url(./image/ea-play-16x9.png.adapt.crop1x1.767w.png);
+  background-size: cover;
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 3;
+  display: grid;
+  position: relative;
 }
-.grid-item-4 img:hover {
+.grid-item-3 svg {
   width: 100px;
   height: 100px;
+  transition: 0.3s;
+}
+.grid-item-3:hover svg {
+  width: 110px;
+  height: 110px;
+}
+.left-hidden-box .grid-container .grid-item-4 {
+  background-image: url(./image/eas-fifa22-gen5-ue-keyart-horz-f23logo.jpg.adapt.crop1x1.767w.jpg);
+  background-size: cover;
+  grid-column: 1;
+  grid-row: 5;
+  display: grid;
+  position: relative;
+}
+.grid-item-4 svg {
+  width: 60px;
+  height: 60px;
+  transition: 0.3s;
+}
+.grid-item-4:hover svg {
+  width: 70px;
+  height: 70px;
+}
+.left-hidden-box .grid-container .grid-item-5 {
+  background-image: url(./image/1-1-gamebox-f122-keyart-1.png.adapt.crop1x1.767w.png);
+  background-size: cover;
+  grid-column: 2;
+  grid-row: 5;
+  display: grid;
+  position: relative;
+}
+.grid-item-5:hover .bg-image {
+  background-size: 100%;
+}
+.grid-item-5 .bg-image {
+  width: 100px;
+  height: 50px;
+  background-image: url(./image/f122-gamebox-logo.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  background-position: center;
+}
+.left-hidden-box .grid-container .grid-item-6 {
+  background-image: url(./image/madden-23-keyart.jpg.adapt.crop1x1.767w.jpg);
+  background-size: cover;
+  grid-column: 1;
+  grid-row: 6;
+  display: grid;
+  position: relative;
+}
+.grid-item-6 svg {
+  width: 70px;
+  height: 70px;
+  transition: 0.3s;
+}
+.grid-item-6:hover svg {
+  width: 85px;
+  height: 85px;
+}
+.left-hidden-box .grid-container .grid-item-7 {
+  background-image: url(./image/apex-legends-keyart.jpg.adapt.crop1x1.767w.jpg);
+  background-size: cover;
+  grid-column: 2;
+  grid-row: 6;
+  display: grid;
+  position: relative;
+}
+.grid-item-7 svg {
+  width: 50px;
+  height: 50px;
+  transition: 0.1s;
+}
+.grid-item-7:hover svg {
+  width: 60px;
+  height: 60px;
+}
+.left-hidden-box .grid-container .grid-item-8 {
+  background-image: url(./image/battlefield-2042-key-art.jpg.adapt.crop1x1.767w.jpg);
+  background-size: cover;
+  grid-column: 1;
+  grid-row: 7;
+  display: grid;
+  position: relative;
+}
+.grid-item-8 svg {
+  width: 80px;
+  height: 80px;
+  transition: 0.3s;
+}
+.grid-item-8:hover svg {
+  width: 90px;
+  height: 90px;
+}
+.left-hidden-box .grid-container .grid-item-9 {
+  background-image: url(./image/the-sims-4-keyart.jpg.adapt.crop1x1.767w.jpg);
+  background-size: cover;
+  grid-column: 2;
+  grid-row: 7;
+  display: grid;
+  position: relative;
+}
+.grid-item-9 .bg-image {
+  width: 100px;
+  height: 50px;
+  background-image: url(./image/the-sims-4-mono-logo.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  background-position: center;
+}
+.grid-item-9:hover .bg-image {
+  background-size: 100%;
+}
+.grid-container .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
