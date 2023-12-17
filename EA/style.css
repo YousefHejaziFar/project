@@ -46,7 +46,7 @@ nav .nav-item-1 {
 */
 .left-hidden-box {
   height: 100vh;
-  width: 900%;
+  width: 950%;
   background-color: rgb(255, 255, 255);
   left: 0;
   top: 0;
@@ -59,7 +59,7 @@ nav .nav-item-1 {
   display: none;
 }
 .left-hidden-box .content {
-  height: 170vh;
+  height: 150vh;
   width: 100%;
   padding: 0px 30px;
 }
@@ -138,8 +138,8 @@ nav .nav-item-1 {
   background-size: 100%;
 }
 .grid-item-3 .bg-image {
-  width: 100px;
-  height: 0px;
+  width: 60%;
+  height: 40%;
   background-image: url(./image/f122-gamebox-logo.png);
   background-size: 80%;
   background-repeat: no-repeat;
@@ -172,13 +172,13 @@ nav .nav-item-1 {
   position: relative;
 }
 .grid-item-5 svg {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   transition: 0.1s;
 }
 .grid-item-5:hover svg {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
 }
 .left-hidden-box .grid-container .grid-item-6 {
   background-image: url(./image/battlefield-2042-key-art.jpg.adapt.crop1x1.767w.jpg);
@@ -206,8 +206,8 @@ nav .nav-item-1 {
   position: relative;
 }
 .grid-item-7 .bg-image {
-  width: 80px;
-  height: 0px;
+  width: 60%;
+  height: 30%;
   background-image: url(./image/the-sims-4-mono-logo.png);
   background-size: 90%;
   background-repeat: no-repeat;
@@ -272,19 +272,19 @@ nav .nav-item-2 {
 .flex {
   display: flex;
 }
-.flex-container {
+.flex-dropdown {
   display: flex;
   width: 50%;
   flex-direction: column;
   margin-right: 20px;
   padding: 40px 0px 40px 40px;
 }
-.flex-container hr {
+.flex-dropdown hr {
   border-color: rgb(222, 222, 222);
   width: 80%;
   margin-top: 5px;
 }
-.flex-container p {
+.flex-dropdown p {
   font-size: 17px;
   width: 150px;
 }
@@ -311,33 +311,94 @@ nav .nav-item-2 {
                                   section-1:video
 */
 .video {
-  height: 70vh;
-  background-color: rgb(46, 46, 46);
+  height: 250vh;
+  background-image: linear-gradient(to top, black, rgb(45, 45, 45));
   color: white;
   position: relative;
+  padding-top: 100px;
 }
-.video img {
-  left: 45%;
-  top: 10%;
-  position: absolute;
+.video .flex-sport-game {
+  width: 75%;
+  background-color: rgba(255, 255, 255, 0);
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-.video h1 {
-  position: absolute;
-  top: 40%;
-  left: 29%;
+.flex-sport-game .sport-game-text {
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+.flex-sport-game .sport-game-image {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-between;
+}
+.flex-sport-game .sport-game-text > div {
+  display: flex;
+  height: 100%;
+}
+.flex-sport-game .sport-game-image > div {
+  display: flex;
+  height: 32%;
+  width: 32%;
+  background-size: cover;
+}
+/*
+                                  .flex-sport-game .sport-game-text
+*/
+.sport-game-text .item-1 img {
+  margin: auto;
+}
+.sport-game-text .item-2 h1 {
   text-align: center;
   margin: auto;
   font-size: 50px;
+  font-family: serif;
 }
-.video p {
-  position: absolute;
-  width: 80%;
-  font-size: 26px;
-  top: 60%;
-  left: 10%;
+.sport-game-text .item-3 p {
+  width: 100%;
+  font-size: 24px;
   text-align: center;
   line-height: 1.5;
 }
-.video p span {
-  color: rgb(199, 0, 0);
+.sport-game-text .item-3 p span {
+  color: rgb(227, 50, 50);
+}
+/*
+                                  .flex-sport-game .sport-game-image
+*/
+.flex-sport-game .item-4 {
+  background-image: url(./image/wrc-gamebox-1x1.jpg.adapt.crop1x1.767w.jpg);
+}
+.flex-sport-game .item-5 {
+  background-image: url(./image/madden-24-keyart.jpg.adapt.crop1x1.767w.jpg);
+}
+.flex-sport-game .item-6 {
+  background-image: url(./image/f123-gametile-16x9.jpg.adapt.crop1x1.767w.jpg);
+}
+.flex-sport-game .item-7 {
+  background-image: url(./image/ufc-5-keyart.jpg.adapt.crop1x1.767w.jpg);
+}
+.flex-sport-game .item-8 {
+  background-image: url(./image/nhl24-eacom-gin-asset-1x1.jpg.adapt.crop1x1.767w.jpg);
+}
+.flex-sport-game .item-9 {
+  background-image: url(./image/ea-sports-pgatour-keyart.jpg.adapt.crop1x1.767w.jpg);
+}
+.flex-sport-game .item-10 {
+  background-image: url(./image/fc24.jpeg.adapt.crop1x1.767w.jpeg);
+}
+.flex-sport-game .item-11 {
+  background-image: url(./image/super-mega-baseball-4-keyart-.jpg.adapt.crop1x1.767w.jpg);
+}
+.flex-sport-game .item-12 {
+  background-image: url(./image/nhl23-game-box-bg-1x1.jpg.adapt.crop1x1.767w.jpg);
 }
