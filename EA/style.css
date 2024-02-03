@@ -330,7 +330,7 @@ nav .nav-item-2 {
 }
 .flex-sport-game .sport-game-image > div {
   display: flex;
-  height: 31%;
+  height: 32%;
   width: 30%;
   background-size: cover;
   background-position: center;
@@ -349,9 +349,9 @@ nav .nav-item-2 {
 }
 .sport-game-text .item-3 p {
   width: 100%;
-  font-size: 24px;
+  font-size: 23px;
   text-align: center;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 .sport-game-text .item-3 p span {
   color: rgb(227, 50, 50);
@@ -978,4 +978,30 @@ nav .nav-item-2 {
   cursor: pointer;
   display: flex;
   margin: 0px;
+}
+/*
+                           ### Responsive ###
+*/
+@media only screen and (min-width: 1440px) {
+  /*
+                                  ### section-1:video ###
+*/
+  .video {
+    height: 2000px;
+  }
+  .video .flex-sport-game {
+    width: 1080px;
+  }
+  .flex-sport-game .sport-game-text {
+    height: 450px;
+  }
+  .flex-sport-game .sport-game-image {
+    height: 1150px;
+  }
+  .flex-sport-game .sport-game-image > div {
+    width: 340px;
+  }
+  .flex-sport-game .button-sport-game {
+    height: 200px;
+  }
 }
