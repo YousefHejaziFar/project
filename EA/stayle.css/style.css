@@ -11,27 +11,42 @@ nav {
   position: sticky;
   width: 100%;
   top: 0%;
-  padding: 10px 0px;
   background-color: white;
   z-index: 2;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+nav > div {
+  display: flex;
 }
 nav div {
   display: inline-block;
 }
 nav .nav-item-1 {
-  width: 3%;
   text-align: center;
   font-size: 25px;
+  margin: 0px 20px;
   position: relative;
   transition: 0.3s;
+  display: flex;
 }
 .nav-item-1 i {
-  transition: 0.5s;
+  transition: 0.2s;
   cursor: pointer;
 }
-.nav-item-1 i:hover {
+.nav-item-1 .three-points:hover {
   color: rgb(255, 68, 0);
   font-size: 35px;
+}
+.nav-item-1 .three-lines {
+  display: none;
+}
+.nav-item-1 .three-lines i {
+  font-size: 20px;
+}
+.nav-item-1 .three-lines:hover {
+  color: rgb(255, 68, 0);
 }
 .nav-item-1 input {
   width: 0;
@@ -89,7 +104,7 @@ nav .nav-item-1 {
   font-size: 20px;
 }
 .left-hidden-box .grid-container .grid-item-1 {
-  background-image: url(./image/ea-play-16x9.png.adapt.crop1x1.767w.png);
+  background-image: url(../image/ea-play-16x9.png.adapt.crop1x1.767w.png);
   background-size: cover;
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
@@ -104,14 +119,14 @@ nav .nav-item-1 {
   transition: 0.3s;
 }
 .grid-item-1 .svg {
-  background-image: url(./image/ea-play-mono-logo-svg.svg);
+  background-image: url(../image/ea-play-mono-logo-svg.svg);
   background-size: 30%;
 }
 .grid-item-1 :hover .svg {
   background-size: 35%;
 }
 .left-hidden-box .grid-container .grid-item-2 {
-  background-image: url(./image/eas-fifa22-gen5-ue-keyart-horz-f23logo.jpg.adapt.crop1x1.767w.jpg);
+  background-image: url(../image/eas-fifa22-gen5-ue-keyart-horz-f23logo.jpg.adapt.crop1x1.767w.jpg);
   background-size: cover;
   grid-column: 1;
   grid-row: 3;
@@ -119,14 +134,14 @@ nav .nav-item-1 {
   position: relative;
 }
 .grid-item-2 .svg {
-  background-image: url(./image/fifa23-logo-white-stacked.svg);
+  background-image: url(../image/fifa23-logo-white-stacked.svg);
   background-size: 40%;
 }
 .grid-item-2 :hover .svg {
   background-size: 50%;
 }
 .left-hidden-box .grid-container .grid-item-3 {
-  background-image: url(./image/1-1-gamebox-f122-keyart-1.png.adapt.crop1x1.767w.png);
+  background-image: url(../image/1-1-gamebox-f122-keyart-1.png.adapt.crop1x1.767w.png);
   background-size: cover;
   grid-column: 2;
   grid-row: 3;
@@ -134,14 +149,14 @@ nav .nav-item-1 {
   position: relative;
 }
 .grid-item-3 .svg {
-  background-image: url(./image/f122-gamebox-logo.png);
+  background-image: url(../image/f122-gamebox-logo.png);
   background-size: 40%;
 }
 .grid-item-3 :hover .svg {
   background-size: 50%;
 }
 .left-hidden-box .grid-container .grid-item-4 {
-  background-image: url(./image/madden-23-keyart.jpg.adapt.crop1x1.767w.jpg);
+  background-image: url(../image/madden-23-keyart.jpg.adapt.crop1x1.767w.jpg);
   background-size: cover;
   grid-column: 1;
   grid-row: 4;
@@ -149,14 +164,14 @@ nav .nav-item-1 {
   position: relative;
 }
 .grid-item-4 .svg {
-  background-image: url(./image/m23-gamebox-logo.svg);
+  background-image: url(../image/m23-gamebox-logo.svg);
   background-size: 40%;
 }
 .grid-item-4 :hover .svg {
   background-size: 50%;
 }
 .left-hidden-box .grid-container .grid-item-5 {
-  background-image: url(./image/apex-legends-keyart.jpg.adapt.crop1x1.767w.jpg);
+  background-image: url(../image/apex-legends-keyart.jpg.adapt.crop1x1.767w.jpg);
   background-size: cover;
   grid-column: 2;
   grid-row: 4;
@@ -164,14 +179,14 @@ nav .nav-item-1 {
   position: relative;
 }
 .grid-item-5 .svg {
-  background-image: url(./image/apex-legends-mono-logo.svg);
+  background-image: url(../image/apex-legends-mono-logo.svg);
   background-size: 40%;
 }
 .grid-item-5 :hover.svg {
   background-size: 50%;
 }
 .left-hidden-box .grid-container .grid-item-6 {
-  background-image: url(./image/battlefield-2042-key-art.jpg.adapt.crop1x1.767w.jpg);
+  background-image: url(../image/battlefield-2042-key-art.jpg.adapt.crop1x1.767w.jpg);
   background-size: cover;
   grid-column: 1;
   grid-row: 5;
@@ -179,14 +194,14 @@ nav .nav-item-1 {
   position: relative;
 }
 .grid-item-6 .svg {
-  background-image: url(./image/battlefield-2042-mono-logo-svg.svg);
+  background-image: url(../image/battlefield-2042-mono-logo-svg.svg);
   background-size: 50%;
 }
 .grid-item-6 :hover.svg {
   background-size: 60%;
 }
 .left-hidden-box .grid-container .grid-item-7 {
-  background-image: url(./image/the-sims-4-keyart.jpg.adapt.crop1x1.767w.jpg);
+  background-image: url(../image/the-sims-4-keyart.jpg.adapt.crop1x1.767w.jpg);
   background-size: cover;
   grid-column: 2;
   grid-row: 5;
@@ -194,7 +209,7 @@ nav .nav-item-1 {
   position: relative;
 }
 .grid-item-7 .svg {
-  background-image: url(./image/the-sims-4-mono-logo.png);
+  background-image: url(../image/the-sims-4-mono-logo.png);
   background-size: 50%;
 }
 .grid-item-7 :hover .svg {
@@ -209,7 +224,7 @@ nav .nav-item-1 {
   display: block;
 }
 nav .nav-item-2 {
-  width: 15%;
+  width: 20%;
 }
 .nav-item-3 ul li {
   display: inline-block;
@@ -316,22 +331,22 @@ nav .nav-item-2 {
   justify-content: space-evenly;
   margin-bottom: 30px;
 }
-.flex-sport-game .sport-game-image {
-  height: 70%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: space-around;
-  justify-content: space-between;
-}
 .flex-sport-game .sport-game-text > div {
   display: flex;
   height: 100%;
 }
-.flex-sport-game .sport-game-image > div {
+.flex-sport-game .sport-game-image {
   display: flex;
+  width: 100%;
+  height: 100%;
+  max-width: 50%;
+}
+.flex-sport-game .sport-game-image .column {
+  width: 100%;
+}
+.flex-sport-game .sport-game-image .column > div {
   height: 32%;
-  width: 30%;
+  width: 100%;
   background-size: cover;
   background-position: center;
 }
@@ -379,27 +394,27 @@ nav .nav-item-2 {
   transition: 0.5s;
 }
 .sport-game-image .item-4 {
-  background-image: url(./image/wrc-gamebox-1x1.jpg.adapt.crop1x1.767w.jpg);
+  background-image: url(../image/wrc-gamebox-1x1.jpg.adapt.crop1x1.767w.jpg);
 }
 .sport-game-image .item-4 .svg {
-  background-image: url(./image/eas-wrc-logo-hz-wht-rgb.svg);
+  background-image: url(../image/eas-wrc-logo-hz-wht-rgb.svg);
   background-size: 60%;
 }
 .item-4 .container:hover .svg {
   background-size: 70%;
 }
 .sport-game-image .item-5 {
-  background-image: url(./image/madden-24-keyart.jpg.adapt.crop1x1.767w.jpg);
+  background-image: url(../image/madden-24-keyart.jpg.adapt.crop1x1.767w.jpg);
 }
 .sport-game-image .item-5 .svg {
-  background-image: url(./image/m24-mono-logo.svg);
+  background-image: url(../image/m24-mono-logo.svg);
   background-size: 50%;
 }
 .sport-game-image .item-5 .container:hover .svg {
   background-size: 60%;
 }
 .sport-game-image .item-6 {
-  background-image: url(./image/f123-gametile-16x9.jpg.adapt.crop1x1.767w.jpg);
+  background-image: url(../image/f123-gametile-16x9.jpg.adapt.crop1x1.767w.jpg);
 }
 .sport-game-image .item-6 img {
   width: 180px;
@@ -417,37 +432,37 @@ nav .nav-item-2 {
   );
 }
 .sport-game-image .item-7 {
-  background-image: url(./image/ufc-5-keyart.jpg.adapt.crop1x1.767w.jpg);
+  background-image: url(../image/ufc-5-keyart.jpg.adapt.crop1x1.767w.jpg);
 }
 .sport-game-image .item-7 .svg {
-  background-image: url(./image/ufc-5-logo.svg);
+  background-image: url(../image/ufc-5-logo.svg);
   background-size: 50%;
 }
 .item-7 .container:hover .svg {
   background-size: 60%;
 }
 .sport-game-image .item-8 {
-  background-image: url(./image/nhl24-eacom-gin-asset-1x1.jpg.adapt.crop1x1.767w.jpg);
+  background-image: url(../image/nhl24-eacom-gin-asset-1x1.jpg.adapt.crop1x1.767w.jpg);
 }
 .sport-game-image .item-8 .svg {
-  background-image: url(./image/nhl24-game-box-logo.svg);
+  background-image: url(../image/nhl24-game-box-logo.svg);
   background-size: 50%;
 }
 .item-8 .container:hover .svg {
   background-size: 60%;
 }
 .sport-game-image .item-9 {
-  background-image: url(./image/ea-sports-pgatour-keyart.jpg.adapt.crop1x1.767w.jpg);
+  background-image: url(../image/ea-sports-pgatour-keyart.jpg.adapt.crop1x1.767w.jpg);
 }
 .sport-game-image .item-9 .svg {
-  background-image: url(./image/ea-sports-pga-tour-mono-logo-white.svg);
+  background-image: url(../image/ea-sports-pga-tour-mono-logo-white.svg);
   background-size: 50%;
 }
 .item-9 .container:hover .svg {
   background-size: 60%;
 }
 .sport-game-image .item-10 {
-  background-image: url(./image/fc24.jpeg.adapt.crop1x1.767w.jpeg);
+  background-image: url(../image/fc24.jpeg.adapt.crop1x1.767w.jpeg);
 }
 .sport-game-image .item-10 img {
   width: 190px;
@@ -459,10 +474,10 @@ nav .nav-item-2 {
   height: 60px;
 }
 .sport-game-image .item-11 {
-  background-image: url(./image/super-mega-baseball-4-keyart-.jpg.adapt.crop1x1.767w.jpg);
+  background-image: url(../image/super-mega-baseball-4-keyart-.jpg.adapt.crop1x1.767w.jpg);
 }
 .sport-game-image .item-11 .svg {
-  background-image: url(./image/super-mega-baseball-4-logo.svg);
+  background-image: url(../image/super-mega-baseball-4-logo.svg);
   background-size: 50%;
 }
 .item-11 .container:hover .svg {
@@ -476,10 +491,10 @@ nav .nav-item-2 {
   );
 }
 .sport-game-image .item-12 {
-  background-image: url(./image/nhl23-game-box-bg-1x1.jpg.adapt.crop1x1.767w.jpg);
+  background-image: url(../image/nhl23-game-box-bg-1x1.jpg.adapt.crop1x1.767w.jpg);
 }
 .sport-game-image .item-12 .svg {
-  background-image: url(./image/nhl23-game-box-logo-white.svg);
+  background-image: url(../image/nhl23-game-box-logo-white.svg);
   background-size: 50%;
 }
 .item-12 .container:hover .svg {
@@ -513,7 +528,7 @@ nav .nav-item-2 {
 */
 .bar-between-the-two-sections {
   height: 15vh;
-  background-image: url(./image/ea-play-product-conversion-gradient-jpg-2020-xl.jpg.adapt.1920w.jpg);
+  background-image: url(../image/ea-play-product-conversion-gradient-jpg-2020-xl.jpg.adapt.1920w.jpg);
   background-size: cover;
 }
 .bar-between-the-two-sections .container {
@@ -594,7 +609,7 @@ nav .nav-item-2 {
   background-position: center;
 }
 .mobile-sports-games-image .item-1 {
-  background-image: url(./image/fc-mobile-keyart.jpg.adapt.crop1x1.767w.jpg);
+  background-image: url(../image/fc-mobile-keyart.jpg.adapt.crop1x1.767w.jpg);
 }
 .mobile-sports-games-image .item-1 img {
   width: 150px;
@@ -606,7 +621,7 @@ nav .nav-item-2 {
   height: 55px;
 }
 .mobile-sports-games-image .item-2 {
-  background-image: url(./image/madden-mobile-24-keyart.jpg.adapt.crop1x1.767w.jpg);
+  background-image: url(../image/madden-mobile-24-keyart.jpg.adapt.crop1x1.767w.jpg);
 }
 .mobile-sports-games-image .item-2 img {
   width: 150px;
@@ -618,7 +633,7 @@ nav .nav-item-2 {
   height: 90px;
 }
 .mobile-sports-games-image .item-3 {
-  background-image: url(./image/mlb-gin-1x1.jpg.adapt.crop1x1.767w.jpg);
+  background-image: url(../image/mlb-gin-1x1.jpg.adapt.crop1x1.767w.jpg);
 }
 .mobile-sports-games-image .item-3 img {
   width: 190px;
@@ -630,7 +645,7 @@ nav .nav-item-2 {
   height: 45px;
 }
 .mobile-sports-games-image .item-4 {
-  background-image: url(./image/nba-live-mobile-giannis-gamebox-1x1.jpg.adapt.crop1x1.767w.jpg);
+  background-image: url(../image/nba-live-mobile-giannis-gamebox-1x1.jpg.adapt.crop1x1.767w.jpg);
 }
 .mobile-sports-games-image .item-4 img {
   width: 120px;
@@ -642,10 +657,10 @@ nav .nav-item-2 {
   height: 80px;
 }
 .mobile-sports-games-image .item-5 {
-  background-image: url(./image/f1-mobile-gamebox-1x1.png.adapt.crop1x1.767w.png);
+  background-image: url(../image/f1-mobile-gamebox-1x1.png.adapt.crop1x1.767w.png);
 }
 .mobile-sports-games-image .item-5 .svg {
-  background-image: url(./image/f1-mobile-racing-logo.svg);
+  background-image: url(../image/f1-mobile-racing-logo.svg);
   background-position: center;
   background-size: 30%;
   background-repeat: no-repeat;
@@ -800,7 +815,7 @@ nav .nav-item-2 {
 */
 .The-bar-between-section-4-5 {
   height: 15vh;
-  background-image: url(./image/ea-sports-pc-join-us-xl.png.adapt.1920w.png);
+  background-image: url(../image/ea-sports-pc-join-us-xl.png.adapt.1920w.png);
   background-size: cover;
 }
 .The-bar-between-section-4-5 .container {
@@ -1004,7 +1019,7 @@ nav .nav-item-2 {
                                   ### section-1:video ###
 */
   .video {
-    height: 2000px;
+    height: 9000px;
   }
   .video .flex-sport-game {
     width: 1080px;
@@ -1013,10 +1028,7 @@ nav .nav-item-2 {
     height: 450px;
   }
   .flex-sport-game .sport-game-image {
-    height: 1150px;
-  }
-  .flex-sport-game .sport-game-image > div {
-    width: 340px;
+    height: 5050px;
   }
   .flex-sport-game .button-sport-game {
     height: 200px;
@@ -1070,7 +1082,7 @@ nav .nav-item-2 {
                            ### footer ###
 */
   .footer {
-    height: 550px;
+    height: 650px;
   }
   .footer .footer-local .container {
     width: 1080px;
@@ -1079,5 +1091,22 @@ nav .nav-item-2 {
     width: 1080px;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 1024px) {
+  /*
+                                  ### nav-bar ###
+*/
+  .nav-item-1 .three-points {
+    display: none;
+  }
+  .nav-item-1 .three-lines {
+    display: block;
+  }
+  .nav-item-3 {
+    display: none;
+  }
+  /*
+                                  ### section-1:video ###
+*/
+  .flex-sport-game .sport-game-image .column {
+  }
 }
