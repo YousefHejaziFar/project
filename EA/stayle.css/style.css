@@ -25,7 +25,7 @@ nav div {
 }
 nav .nav-item-1 {
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
   margin: 0px 20px;
   position: relative;
   transition: 0.3s;
@@ -37,7 +37,7 @@ nav .nav-item-1 {
 }
 .nav-item-1 .three-points:hover {
   color: rgb(255, 68, 0);
-  font-size: 35px;
+  font-size: 32px;
 }
 .nav-item-1 .three-lines {
   display: none;
@@ -338,15 +338,14 @@ nav .nav-item-2 {
 .flex-sport-game .sport-game-image {
   display: flex;
   width: 100%;
-  height: 100%;
-  max-width: 50%;
+  height: 1050px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.flex-sport-game .sport-game-image .column {
-  width: 100%;
-}
-.flex-sport-game .sport-game-image .column > div {
+.flex-sport-game .sport-game-image > div {
+  display: flex;
   height: 32%;
-  width: 100%;
+  width: 32%;
   background-size: cover;
   background-position: center;
 }
@@ -404,38 +403,33 @@ nav .nav-item-2 {
   background-size: 70%;
 }
 .sport-game-image .item-5 {
-  background-image: url(../image/madden-24-keyart.jpg.adapt.crop1x1.767w.jpg);
+  background-image: url(../image/ufc-5-keyart.jpg.adapt.crop1x1.767w.jpg);
 }
 .sport-game-image .item-5 .svg {
-  background-image: url(../image/m24-mono-logo.svg);
+  background-image: url(../image/ufc-5-logo.svg);
   background-size: 50%;
 }
 .sport-game-image .item-5 .container:hover .svg {
   background-size: 60%;
 }
 .sport-game-image .item-6 {
-  background-image: url(../image/f123-gametile-16x9.jpg.adapt.crop1x1.767w.jpg);
+  background-image: url(../image/fc24.jpeg.adapt.crop1x1.767w.jpeg);
 }
 .sport-game-image .item-6 img {
-  width: 180px;
-  height: 60px;
+  width: 160px;
+  height: 40px;
   transition: 0.5s;
 }
 .item-6 .container:hover img {
-  margin-bottom: 120px;
-}
-.item-6 .container:hover {
-  background-image: linear-gradient(
-    to right bottom,
-    rgba(13, 0, 80, 0.742),
-    rgba(148, 0, 39, 0.688)
-  );
+  width: 200px;
+  height: 50px;
 }
 .sport-game-image .item-7 {
-  background-image: url(../image/ufc-5-keyart.jpg.adapt.crop1x1.767w.jpg);
+  background-image: url(../image/madden-24-keyart.jpg.adapt.crop1x1.767w.jpg);
 }
 .sport-game-image .item-7 .svg {
-  background-image: url(../image/ufc-5-logo.svg);
+  background-image: url(../image/m24-mono-logo.svg);
+
   background-size: 50%;
 }
 .item-7 .container:hover .svg {
@@ -452,43 +446,49 @@ nav .nav-item-2 {
   background-size: 60%;
 }
 .sport-game-image .item-9 {
-  background-image: url(../image/ea-sports-pgatour-keyart.jpg.adapt.crop1x1.767w.jpg);
+  background-image: url(../image/super-mega-baseball-4-keyart-.jpg.adapt.crop1x1.767w.jpg);
 }
 .sport-game-image .item-9 .svg {
-  background-image: url(../image/ea-sports-pga-tour-mono-logo-white.svg);
+  background-image: url(../image/super-mega-baseball-4-logo.svg);
   background-size: 50%;
 }
 .item-9 .container:hover .svg {
-  background-size: 60%;
+  margin-bottom: 120px;
+}
+.item-9 .container:hover {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(13, 0, 80, 0.742),
+    rgba(148, 0, 39, 0.688)
+  );
 }
 .sport-game-image .item-10 {
-  background-image: url(../image/fc24.jpeg.adapt.crop1x1.767w.jpeg);
+  background-image: url(../image/f123-gametile-16x9.jpg.adapt.crop1x1.767w.jpg);
 }
 .sport-game-image .item-10 img {
-  width: 190px;
+  width: 180px;
   height: 50px;
   transition: 0.5s;
 }
 .item-10 .container:hover img {
-  width: 230px;
-  height: 60px;
-}
-.sport-game-image .item-11 {
-  background-image: url(../image/super-mega-baseball-4-keyart-.jpg.adapt.crop1x1.767w.jpg);
-}
-.sport-game-image .item-11 .svg {
-  background-image: url(../image/super-mega-baseball-4-logo.svg);
-  background-size: 50%;
-}
-.item-11 .container:hover .svg {
   margin-bottom: 120px;
 }
-.item-11 .container:hover {
+.item-10 .container:hover {
   background-image: linear-gradient(
     to right bottom,
     rgba(23, 14, 68, 0.742),
     rgba(181, 0, 48, 0.811)
   );
+}
+.sport-game-image .item-11 {
+  background-image: url(../image/ea-sports-pgatour-keyart.jpg.adapt.crop1x1.767w.jpg);
+}
+.sport-game-image .item-11 .svg {
+  background-image: url(../image/ea-sports-pga-tour-mono-logo-white.svg);
+  background-size: 50%;
+}
+.item-11 .container:hover .svg {
+  background-size: 60%;
 }
 .sport-game-image .item-12 {
   background-image: url(../image/nhl23-game-box-bg-1x1.jpg.adapt.crop1x1.767w.jpg);
@@ -530,6 +530,7 @@ nav .nav-item-2 {
   height: 15vh;
   background-image: url(../image/ea-play-product-conversion-gradient-jpg-2020-xl.jpg.adapt.1920w.jpg);
   background-size: cover;
+  background-position: center;
 }
 .bar-between-the-two-sections .container {
   width: 75%;
@@ -552,10 +553,15 @@ nav .nav-item-2 {
   display: flex;
   cursor: pointer;
   transition: 0.5s;
+  background-image: url(../image/ea-play-logo-coral-cta-type-image.svg);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 180px;
+  height: 180px;
 }
 .bar-between-the-two-sections .container svg:hover {
-  height: 150px;
-  width: 150px;
+  background-size: 100%;
 }
 .bar-between-the-two-sections .container .button-bar-between-the-two-sections {
   width: 20%;
@@ -584,7 +590,7 @@ nav .nav-item-2 {
                            ### mobile-sports-games ###
 */
 .mobile-sports-games {
-  height: 140vh;
+  height: 100vh;
 }
 .mobile-sports-games h1 {
   text-align: center;
@@ -594,16 +600,15 @@ nav .nav-item-2 {
 }
 .mobile-sports-games .mobile-sports-games-image {
   width: 75%;
-  height: 65%;
+  height: 50%;
   margin: 0px auto 120px auto;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
 }
 .mobile-sports-games .mobile-sports-games-image > div {
   display: flex;
-  height: 50%;
+  height: 100%;
   width: 32%;
   background-size: cover;
   background-position: center;
@@ -693,16 +698,16 @@ nav .nav-item-2 {
 }
 .news .nav {
   background-color: rgba(255, 255, 255, 0.044);
-  height: 2%;
+  height: 60px;
   border-bottom: 1px solid rgb(52, 52, 52);
 }
 .news .nav .content {
-  width: 80vw;
+  width: 85%;
   height: 100%;
   margin: auto;
   overflow-x: scroll;
-  display: flex;
   align-items: center;
+  position: relative;
 }
 .news .nav .content::-webkit-scrollbar {
   display: none;
@@ -719,14 +724,25 @@ nav .nav-item-2 {
 }
 .news .nav .container div:hover {
   background-color: rgb(205, 205, 205);
+  cursor: pointer;
 }
 .news .nav .container div > p {
-  border-left: 1px solid rgb(98, 98, 98);
-  border-right: 1px solid rgb(122, 122, 122);
+  border-left: 2px solid rgba(98, 98, 98, 0.248);
+  border-right: 2px solid rgba(122, 122, 122, 0.268);
+  color: rgba(0, 0, 0, 0.605);
+}
+.news .nav .container .item-13 {
+  position: absolute;
+  right: 0%;
+  background-color: rgba(4, 4, 4, 0.078);
+  box-shadow: -20px 0px 15px 0px rgba(144, 144, 144, 0.395);
+}
+.news .nav .container .item-13:hover {
+  background-color: rgba(4, 4, 4, 0.078);
 }
 .news .nav .container .item-2 {
-  background-color: rgb(215, 215, 215);
-  border-bottom: 3px solid rgb(174, 0, 0);
+  background-color: rgba(215, 215, 215, 0.621);
+  border-bottom: 3px solid rgb(215, 0, 0);
 }
 .news .nav .container .item-2 p {
   border-left: none;
@@ -1019,16 +1035,13 @@ nav .nav-item-2 {
                                   ### section-1:video ###
 */
   .video {
-    height: 9000px;
+    height: 2000px;
   }
   .video .flex-sport-game {
     width: 1080px;
   }
   .flex-sport-game .sport-game-text {
     height: 450px;
-  }
-  .flex-sport-game .sport-game-image {
-    height: 5050px;
   }
   .flex-sport-game .button-sport-game {
     height: 200px;
@@ -1046,7 +1059,7 @@ nav .nav-item-2 {
                            ### mobile-sports-games ###
 */
   .mobile-sports-games {
-    height: 1000px;
+    height: 700px;
   }
   .mobile-sports-games .mobile-sports-games-image {
     width: 1080px;
@@ -1107,6 +1120,75 @@ nav .nav-item-2 {
   /*
                                   ### section-1:video ###
 */
-  .flex-sport-game .sport-game-image .column {
+  .video {
+    height: 3200px;
+  }
+  .video .flex-sport-game {
+    justify-content: flex-start;
+    width: 80%;
+  }
+  .flex-sport-game .sport-game-text {
+    height: 20%;
+  }
+  .flex-sport-game .sport-game-image {
+    height: 75%;
+    gap: 20px;
+  }
+  .flex-sport-game .sport-game-image > div {
+    width: 48%;
+    height: 18%;
+  }
+  /*
+                           ### The bar between section 1,2 ###
+*/
+  .bar-between-the-two-sections {
+    height: 200px;
+    padding: 30px 0px 0px 0px;
+  }
+  .bar-between-the-two-sections .container {
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .bar-between-the-two-sections .container h1 {
+    width: 100%;
+    justify-content: center;
+    font-size: 35px;
+  }
+  .container .button-bar-between-the-two-sections {
+    width: 20%;
+  }
+  .bar-between-the-two-sections .container button {
+    border: 2px solid white;
+    padding: 18px 35px;
+  }
+  .bar-between-the-two-sections .container svg {
+    background-size: 90%;
+    height: 100px;
+    margin-right: 50px;
+  }
+  /*
+                           ### mobile-sports-games ###
+*/
+  .mobile-sports-games {
+    height: 1000px;
+  }
+  .mobile-sports-games .mobile-sports-games-image {
+    height: 75%;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  .mobile-sports-games .mobile-sports-games-image > div {
+    height: 47%;
+    width: 47%;
+  }
+  /*
+                           ### news ###
+*/
+  .news .nav .content {
+    width: 90%;
+  }
+  .news .nav .container div > p {
+    font-size: 18px;
   }
 }
